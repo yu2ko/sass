@@ -59,3 +59,7 @@ typings/
 .next
 
 package-lock.json
+
+.DS_Store
+public/.DS_Store
+src/.DS_Store
