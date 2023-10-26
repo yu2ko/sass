@@ -40,18 +40,17 @@ $contentSizeMap: (
 
 .section__footer {
 	@extend .section__content;
-	margin-left: 100px;
 	padding: 39px 0px;
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
 	align-items: start;
 	@media all and (width < var.screen("tablet")) {
 	grid-template-columns: repeat(3, 1fr);
+	margin-left: s.space(25);
 	}
 
 	@media all and (width < var.screen("mobile")) {
-	grid-template-columns: repeat(2, 1fr);
-	margin-left: 50px;
+	grid-template-columns: 1fr 1fr;
+	margin-left: s.space(14);
 	}
 }
-

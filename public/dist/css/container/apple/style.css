@@ -40,7 +40,6 @@
 }
 
 .section__footer {
-  margin-left: 100px;
   padding: 39px 0px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -49,12 +48,13 @@
 @media all and (width < 1000px) {
   .section__footer {
     grid-template-columns: repeat(3, 1fr);
+    margin-left: 100px;
   }
 }
 @media all and (width < 620px) {
   .section__footer {
-    grid-template-columns: repeat(2, 1fr);
-    margin-left: 50px;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 56px;
   }
 }
 
@@ -297,7 +297,7 @@
 }
 
 .footer__title {
-  margin-bottom: 16px;
+  margin-bottom: 4px;
   color: #1D1D1F;
   font-size: 12px;
   font-weight: 600;
@@ -318,7 +318,8 @@
 }
 
 .footer__columns {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 12px;
   padding-bottom: 32px;
 }
