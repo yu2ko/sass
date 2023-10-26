@@ -1,0 +1,12 @@
+@mixin click {
+	transition: opacity 0.7s;
+	cursor: pointer;
+
+	&:hover {
+	opacity: 0.7;
+	}
+
+	&:active {
+	opacity: 0.3;
+	}
+}
