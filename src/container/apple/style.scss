@@ -189,7 +189,7 @@ $productImage: (
 }
 
 .footer__title {
-	margin-bottom: s.space(4);
+	margin-bottom: s.space(1);
 	color: s.color("fontDark");
 	font-size: s.size("small");
 	font-weight: s.weight("middle");
@@ -203,7 +203,8 @@ $productImage: (
 }
 
 .footer__columns {
-	display: grid;
+	display: flex;
+	flex-direction: column;
 	gap: s.space(3);
 	padding-bottom: s.space(8);
 }
